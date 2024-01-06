@@ -25,10 +25,10 @@ public class Problema2 {
             obtenerAreaCuadrado();
         } else {
             if (tipo == 2) {
-              obtenerAreaTriangulo();
+                obtenerAreaTriangulo();
             } else {
                 if (tipo == 3) {
-                   obtenerAreaRectangulo();
+                    obtenerAreaRectangulo();
                 } else {
                     System.out.println("numero incorrecto");
                 }
@@ -37,16 +37,18 @@ public class Problema2 {
         }
 
     }
-    public static void obtenerAreaCuadrado(){
+
+    public static void obtenerAreaCuadrado() {
         Scanner entrada = new Scanner(System.in);
         double suma;
         double area;
         System.out.println("Ingrese el lado del cuadrado");
         suma = entrada.nextDouble();
         area = suma + suma + suma + suma;
-        System.out.printf("%.2f", area);
-    } 
-    public static void obtenerAreaTriangulo(){
+        System.out.printf("%.2f\n", area);
+    }
+
+    public static void obtenerAreaTriangulo() {
         Scanner entrada = new Scanner(System.in);
         double base;
         double altura;
@@ -56,9 +58,10 @@ public class Problema2 {
         System.out.println("Ingrese la altura del triangulo");
         altura = entrada.nextDouble();
         area = (base * altura) / 2;
-        System.out.printf("%.2f", area);
+        System.out.printf("%.2f\n", area);
     }
-    public static void obtenerAreaRectangulo(){
+
+    public static void obtenerAreaRectangulo() {
         Scanner entrada = new Scanner(System.in);
         double base;
         double altura;
@@ -68,6 +71,6 @@ public class Problema2 {
         System.out.println("Ingrese la altura del rectangulo");
         altura = entrada.nextDouble();
         area = (base * altura);
-        System.out.printf("%.2f", area);
+        System.out.printf("%.2f\n", area);
     }
 }
